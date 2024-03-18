@@ -9,9 +9,13 @@ import numpy as np
 np.random.seed(19680801)
 # import some data to play with
 iris=datasets.load_iris()
+features=iris["feature_names"]
+# print(f'Features:\n{type(features)}')
+print(f'Features:\n{features}')
 print(type(iris.data))
-# print(iris.data)
+print(f'Iris Data:\n{iris.data}')
 X=iris.data[:,:2] # # we only take the first two features.
+print(f'First Two features:\n{X}')
 # print(X)
 y=iris.target
 # print(y)
